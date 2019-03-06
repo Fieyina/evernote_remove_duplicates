@@ -3,7 +3,7 @@
 >若经常保存公众号文章，较大可能会有重复 ———— 维特根斯坦
 ### 一、环境配置
 1. 基于 python3
-2. 访问以下网址安装 python3 的印象笔记 ADK  
+2. 访问以下网址安装 python3 的印象笔记 SDK  
 https://github.com/evernote/evernote-sdk-python3
 3. pip install pandas
 ### 二、主线
