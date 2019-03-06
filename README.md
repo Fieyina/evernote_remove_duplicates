@@ -2,9 +2,10 @@
 印象笔记去重  
 >若经常保存公众号文章，较大可能会有重复 ———— 维特根斯坦
 ### 一、环境配置
-1. 访问以下网址安装 python3 的印象笔记 ADK  
+1. 基于 python3
+2. 访问以下网址安装 python3 的印象笔记 ADK  
 https://github.com/evernote/evernote-sdk-python3
-2. pip install pandas
+3. pip install pandas
 ### 二、主线
 1. 访问以下网址获取 token，填入 py 文件的 token 处  
 https://app.yinxiang.com/api/DeveloperToken.action
