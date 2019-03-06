@@ -1,5 +1,6 @@
 # evernote_remove_duplicates
 印象笔记去重  
+>若经常保存公众号文章，较大可能会有重复 ———— 维特根斯坦
 ## 主线
 1. 访问以下网站获取 token，填入 py 文件的 token 处  
 https://app.yinxiang.com/api/DeveloperToken.action
@@ -19,7 +20,7 @@ https://app.yinxiang.com/api/DeveloperToken.action
 @para 笔记本名称，笔记本数据集  
 接受笔记本名称，获得该笔记本下的*笔记数据集*
 #### get_note_list
-@para 笔记本数据集，笔记本可选名  
+@para 笔记本数据集，笔记本名（可选）  
 接受*笔记本数据集*，获得*笔记数据集*  
 可选参数用于检验程序是否正常运行
 #### writer_to_excel
@@ -28,7 +29,11 @@ https://app.yinxiang.com/api/DeveloperToken.action
 ## 数据结构
 皆为 pd.DataFrame
 #### 笔记本数据集
-columns = ['tag', 'name', 'guid']
+columns = ['tag', 'name', 'guid']  
+*tag 是个人使用印象笔记时的习惯  
+一般笔记本名会命名类似为：a.05 - 互联网  
+这时 a.05 便是 tag，互联网是 name  
+如有修改需求可修改代码第 15 行*
 #### 笔记数据集
 columns=['name', 'guid']
 ## 参考文献
