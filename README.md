@@ -1,24 +1,24 @@
 # evernote_remove_duplicates
 印象笔记去重  
 >若经常保存公众号文章，较大可能会有重复 ———— 维特根斯坦
-## 环境配置
+### 1、环境配置
 1. 访问以下网址安装 python3 的印象笔记 ADK  
 https://github.com/evernote/evernote-sdk-python3
 2. pip install pandas
-## 主线
+### 2、主线
 1. 访问以下网址获取 token，填入 py 文件的 token 处  
 https://app.yinxiang.com/api/DeveloperToken.action
 2. 运行 py 文件，完成去重
 #### 检验程序有效性
 1. 将 check 改为你的一个笔记本名称，推荐新建一个笔记本同时加入一些重复笔记
 2. 将 check 改为 None
-## 注意事项
+### 3、注意事项
 ***务必仔细阅读以下注意事项，以防错删***
 1. 笔记本**不可重名**
 2. 每个笔记本内的笔记**数目不得多于 250 个**
 3. API 有调用频率限制，当抛出 EDAMSystemException 异常时，rateLimitDuration 表示离刷新计数的时间间隔（秒）
-## 代码说明
-### 方法
+## 4、代码说明
+### 4.1 方法
 #### get_notebook_list
 @para API  
 调用 API，获得*笔记本数据集*
@@ -32,7 +32,7 @@ https://app.yinxiang.com/api/DeveloperToken.action
 #### writer_to_excel
 @para 笔记数据集，excel 文件名  
 接受*笔记数据集*导出备查 excel
-### 数据结构
+### 4.2 数据结构
 皆为 pd.DataFrame
 #### 笔记本数据集
 columns = ['tag', 'name', 'guid']  
@@ -42,7 +42,7 @@ columns = ['tag', 'name', 'guid']
 >如有修改需求可修改代码第 15 行
 #### 笔记数据集
 columns=['name', 'guid']
-## 参考文献
+## 5、参考文献
 1. 印象笔记开发者文档  
 https://dev.yinxiang.com/doc/  
 2. 使用 Python 操作 Evernote - 简书  
