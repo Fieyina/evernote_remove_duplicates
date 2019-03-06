@@ -14,17 +14,17 @@ https://app.yinxiang.com/api/DeveloperToken.action
 ## 方法
 #### get_notebook_list
 @para API  
-调用 API，获得**笔记本数据集**
+调用 API，获得*笔记本数据集*
 #### search_note
 @para 笔记本名称，笔记本数据集  
-接受笔记本名称，获得该笔记本下的**笔记数据集**
+接受笔记本名称，获得该笔记本下的*笔记数据集*
 #### get_note_list
 @para 笔记本数据集，笔记本可选名  
-接受**笔记本数据集**，获得**笔记数据集**  
+接受*笔记本数据集*，获得*笔记数据集*  
 可选参数用于检验程序是否正常运行
 #### writer_to_excel
 @para 笔记数据集，excel 文件名  
-接受**笔记数据集**导出备查 excel
+接受*笔记数据集*导出备查 excel
 ## 数据结构
 皆为 pd.DataFrame
 #### 笔记本数据集
