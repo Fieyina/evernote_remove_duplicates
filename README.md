@@ -18,7 +18,7 @@ https://app.yinxiang.com/api/DeveloperToken.action
 2. 每个笔记本内的笔记**数目不得多于 250 个**
 3. API 有调用频率限制，当抛出 EDAMSystemException 异常时，rateLimitDuration 表示离刷新计数的时间间隔（秒）
 ## 四、代码说明
-### 4.1 方法
+### 方法
 #### get_notebook_list
 @para API  
 调用 API，获得*笔记本数据集*
@@ -32,7 +32,7 @@ https://app.yinxiang.com/api/DeveloperToken.action
 #### writer_to_excel
 @para 笔记数据集，excel 文件名  
 接受*笔记数据集*导出备查 excel
-### 4.2 数据结构
+### 数据结构
 皆为 pd.DataFrame
 #### 笔记本数据集
 columns = ['tag', 'name', 'guid']  
