@@ -4,9 +4,10 @@
 ## 主线
 1. 访问以下网站获取 token，填入 py 文件的 token 处  
 https://app.yinxiang.com/api/DeveloperToken.action
-2. 将 check 改为你的一个笔记本名称，推荐新建一个笔记本同时加入一些重复笔记，检验程序是否可以正常运行
-3. 将 check 改为 None
-4. 运行 py 文件，完成去重
+2. 运行 py 文件，完成去重
+#### 检验程序有效性
+1. 将 check 改为你的一个笔记本名称，推荐新建一个笔记本同时加入一些重复笔记
+2. 将 check 改为 None
 ## 注意事项
 ***务必仔细阅读以下注意事项，以防错删***
 1. 笔记本**不可重名**
@@ -30,10 +31,10 @@ https://app.yinxiang.com/api/DeveloperToken.action
 皆为 pd.DataFrame
 #### 笔记本数据集
 columns = ['tag', 'name', 'guid']  
-*tag 是个人使用印象笔记时的习惯  
-一般笔记本名会命名类似为：a.05 - 互联网  
-这时 a.05 便是 tag，互联网是 name  
-如有修改需求可修改代码第 15 行*
+>tag 是个人使用印象笔记时的习惯  
+>一般笔记本名会命名类似为：a.05 - 互联网  
+>这时 a.05 便是 tag，互联网是 name  
+>如有修改需求可修改代码第 15 行
 #### 笔记数据集
 columns=['name', 'guid']
 ## 参考文献
